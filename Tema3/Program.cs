@@ -94,15 +94,16 @@ namespace Tema_3
         static void Main(string[] args)
         {
             int[] vector = new int[] { 58, 65, 10, 9 };
+            double[] vector2 = new double[vector.Length];
             double numar = 50.5;
             for (int i = 0; i < vector.Length; i++)
             {
-                vector[i] = vector [i] + (int)numar;  
+                vector2[i] = vector [i] + (int)numar;  
             }
-            for (int x = 0; x < vector.Length; x++)
+            for (int i = 0; i < vector.Length; i++)
 
             {
-                Console.WriteLine(vector [x] + " ");
+                Console.WriteLine(vector[i] + " + " + numar + "=" + vector2[i]);
             }
                 Console.ReadLine();
 
